@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encuentra los ingredientes del pastel</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Panel izquierdo -->
+    <aside class="side-panel">
+      <img id="chefSprite" class="side-character" src="assets/chef_normal.png" alt="Chefito">
+      <div class="side-name">Chefito</div>
+      <p id="chefText" class="side-text">¡Vamos a buscar los ingredientes!</p>
+    </aside>
+
+    <!-- Centro -->
+    <main class="center-panel">
+      <h1>🎂 Encuentra los ingredientes del pastel</h1>
+
+      <div class="game-wrapper">
+        <canvas id="game" width="640" height="640"></canvas>
+      </div>
+
+      <div class="hud">
+        <p><strong>Controles:</strong> Flechas o WASD</p>
+        <p><strong>Objetivo:</strong> encuentra los ingredientes y luego lleva el pastel a la cumpleañera.</p>
+        <p><strong>Ingredientes encontrados:</strong> <span id="inventory">Ninguno</span></p>
+      </div>
+    </main>
+
+    <!-- Panel derecho -->
+    <aside class="side-panel">
+      <img id="girlSprite" class="side-character" src="assets/cumpleanera.png" alt="Cumpleañera">
+      <div class="side-name">Cumpleañera</div>
+      <p id="girlText" class="side-text">Estoy esperando mi pastel 🎂</p>
+    </aside>
+  </div>
+
+  <div id="endingScreen" class="ending-screen">
+    <div class="ending-card">
+      <h2>🎉 ¡Pastel entregado!</h2>
+      <p>La cumpleañera recibió su pastel con todos los ingredientes que encontraste.</p>
+      <p class="small">Puedes reiniciar para jugar otra vez.</p>
+      <button id="restartBtn">Jugar de nuevo</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
