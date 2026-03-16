@@ -31,7 +31,7 @@ const ingredientTemplates = [
 ];
 
 const portraits = {
-  chef_normal: "assets/chef_normal.png",
+  chef_normal: "assets/tsk/T1.png",
   chef_happy: "assets/chef_happy.png",
   chef_excited: "assets/chef_excited.png",
   chef_proud: "assets/chef_proud.png",

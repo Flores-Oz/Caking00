@@ -16,28 +16,25 @@ body {
 
 .layout {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1800px;
   display: grid;
-  grid-template-columns: 260px 1fr 260px;
-  gap: 24px;
-  align-items: start;
+  grid-template-columns: 420px 1fr 420px;
+  gap: 40px;
 }
 
 .side-panel {
   min-height: 760px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 16px;
 }
 
 .side-character {
-  width: 200px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 420px;
   height: auto;
-  image-rendering: auto;
+  object-fit: contain;
 }
 
 .side-name {
@@ -48,10 +45,10 @@ body {
 }
 
 .side-text {
-  margin-top: 10px;
-  font-size: 1rem;
+  margin-top: 16px;
+  font-size: 1.2rem;
   line-height: 1.5;
-  max-width: 220px;
+  max-width: 320px;
 }
 
 .center-panel {
@@ -67,7 +64,7 @@ h1 {
 
 .game-wrapper {
   position: relative;
-  width: 640px;
+  width: 760px;
   max-width: 95vw;
 }
 
@@ -147,6 +144,6 @@ canvas {
   }
 
   .side-character {
-    width: 140px;
+    width: 90%;
   }
 }
